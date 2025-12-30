@@ -263,8 +263,22 @@ li{
     flex: 1 1 280px;
 }
 
+/* CONTACTO EN DOS COLUMNAS*/
+.contacto-section {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.contacto-contenido,
+.contacto-aside {
+    flex: 1 1 280px;
+}
+
 /* FORMULARIO */
-.form-contacto{
+.form-contacto {
     background: white;
     padding: 20px;
     border-radius: 15px;
@@ -276,21 +290,21 @@ li{
 
 /* Inputs y textarea del formulario */
 .form-contacto input,
-.form-contacto textarea{
+.form-contacto textarea {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 6px;
 }
 
-
 /* FOOTER */
-footer{
+footer {
     text-align: center;
     padding: 15px;
     margin-top: 30px;
     background-color: #ffe2f4;
     color: #4b004b;
 }
+
 
 /*BOTON FLOTANTE Position fixed*/
 .boton-carrito{

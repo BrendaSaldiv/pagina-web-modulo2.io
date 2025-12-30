@@ -326,3 +326,200 @@ footer {
 .boton-carrito:hover{
     background-color: #e0489e;
 }
+
+/* =========================
+   RESPONSIVE: Laptop / Desktop mediano
+   (hasta 1024px)
+========================= */
+@media screen and (max-width: 1024px) {
+
+    /* Más aire horizontal */
+    .nav-principal {
+        padding: 12px 16px;
+    }
+
+    /* Tarjetas de catálogo un poquito más grandes */
+    .producto-tarjeta {
+        flex: 1 1 260px;
+    }
+
+    /* Equipo */
+    .equipo-card {
+        width: 260px;
+    }
+}
+
+/* =========================
+   RESPONSIVE: Tablet
+   (hasta 768px)
+   -> aquí usamos GRID
+========================= */
+@media screen and (max-width: 768px) {
+
+    /* Banner */
+    .top-banner {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    /* Nav: se apila y centra */
+    .nav-principal {
+        justify-content: center;
+        gap: 12px;
+        padding: 12px 14px;
+    }
+
+    .logo {
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav-lista {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px 16px;
+    }
+
+    /* Títulos y secciones */
+    section {
+        padding: 18px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    /* =====================
+     CATÁLOGO: GRID 2 col
+  ====================== */
+    .catalogo-contenedor {
+        padding: 18px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-items: stretch;
+    }
+
+    /* En grid, flex ya no manda; dejamos que la tarjeta ocupe el ancho de la celda */
+    .producto-tarjeta {
+        flex: initial;
+        width: 100%;
+    }
+
+    .producto-img {
+        height: 200px;
+    }
+
+    /* =====================
+     EQUIPO: GRID 2 col
+  ====================== */
+    .equipo-contenedor {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        justify-items: center;
+        align-items: start;
+    }
+
+    /* =====================
+     CONTACTO: GRID 1 col
+  ====================== */
+    .contacto-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Botón flotante: que no tape tanto */
+    .boton-carrito {
+        right: 16px;
+        bottom: 16px;
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+}
+
+/* RESPONSIVE: Celular
+   (hasta 480px)
+   -> aquí usamos GRID */
+@media screen and (max-width: 480px) {
+
+    /* Nav más compacta */
+    .nav-principal {
+        padding: 10px 12px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .nav-lista a {
+        font-size: 14px;
+    }
+
+    /* Secciones */
+    section {
+        padding: 14px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    /* CATÁLOGO: GRID 1 col*/
+    .catalogo-contenedor {
+        padding: 10px;
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .producto-img {
+        height: 180px;
+    }
+
+    .producto-titulo {
+        font-size: 20px;
+    }
+
+    /*EQUIPO: GRID 1 col*/
+    .equipo-contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    .equipo-card {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    /* Form: que respire */
+    .form-contacto {
+        padding: 16px;
+    }
+
+    /* Botón flotante: más pequeño */
+    .boton-carrito {
+        border-radius: 16px;
+        padding: 10px 14px;
+    }
+}
+
+/* EXTRA: Celular muy pequeño
+   (hasta 320px) */
+@media screen and (max-width: 320px) {
+    .nav-lista {
+        gap: 10px;
+    }
+
+    .producto-desc {
+        margin: 10px 12px;
+    }
+
+    /* Ajuste de espacios en grid */
+    .catalogo-contenedor,
+    .equipo-contenedor {
+        gap: 12px;
+    }
+}
